@@ -1,0 +1,10 @@
+*{
+    font-family: 'Inter',sans-serif;
+    margin: 0px;
+}
+#main,#about,#skills,#works,#comments{
+     background-image: url('img/bgMAIN.png');
+     position: relative;
+     background-size: cover;
+     background-position: center;
+    }
