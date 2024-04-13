@@ -1,6 +1,7 @@
 *{
     font-family: 'Inter',sans-serif;
     margin: 0px;
+    scroll-behavior: smooth;
 }
 #main,#about,#skills,#works,#comments{
      min-height: 100vh;
@@ -106,7 +107,7 @@
 }
 .about-content{
     width: 35%;
-    height: 270px;
+    height: 200px;
     padding: 40px;
     background-color: #792aff;
     position: relative;
@@ -158,4 +159,125 @@
     animation-iteration-count: infinite;
     animation-direction: alternate;
     animation-timing-function: linear;
+    z-index: 1;
+}
+.skill-card{
+    background-image: url('img/form3.png');
+    height: 450px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 40px;
+    margin-bottom: 50px;
+}
+.skill-card p{
+    font-size: 18px;
+    margin-top: 80px;
+    margin-bottom: 30px;
+    text-align: center;
+    font-family: 'Comfortaa';
+}
+.works-pictures img{
+    width: 30%;
+}
+.works-pictures{
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+}
+.comments-block{
+    max-width: 1150px;
+    margin: auto;
+    display: flex;
+    justify-content: space-evenly;
+}
+.comment-card{
+    height: 300px;
+    max-width: 200px;
+    background-image: url(img/card.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.comment-card h3{
+    font-family: 'Comfortaa';
+    font-size: 18px;
+    padding: 10px;
+}
+.comment-card p{
+    font-family: 'Comfortaa';
+    font-size: 14px;
+    padding: 10px 20px;
+    text-align: center;
+}
+.comment{
+    width: 327px;
+    height: 161px;
+    background-image: url(img/comment.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.comment p{
+    font-family: 'Comfortaa';
+    font-size: 20px;
+    max-width: 250px;
+}
+nav{
+    position: fixed;
+    top: 0px;
+    z-index: 101;
+    width: 100%;
+}
+.fixed-menu{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-link{
+    width: 115px;
+    height: 40px;
+    background-color: #fff;
+    border: 2px solid black;
+    border-radius: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: black;
+    font-weight: 700;
+    transition-property: background-color,border;
+    transition-duration: 500ms;
+}
+.nav-links{
+    display: flex;
+    padding-right: 30%;
+    gap: 20px;
+}
+.nav-link:hover{
+    background-color: #a977ff;
+}
+.footer{
+    display: flex;
+    justify-content: space-between;
+    background: #200153;
+    color: white;
+    padding: 30px 60px 40px;
+    align-items: center;
+}
+.initials{
+    color: #BBFF2C;
+    font-size: 64px;
+}
+.nav-link_active{
+    color: white;
+    background-color: #792aff;
 }
