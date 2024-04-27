@@ -281,6 +281,26 @@ nav{
     color: white;
     background-color: #792aff;
 }
+.menu_button{
+    background: none;
+    border: none;
+    cursor: pointer;
+    display: none;
+}
+.mobile_menu{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: #200153;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 16px;
+    z-index: -1;
+}
 @media (max-width:1000px){
     .nav-links{
         display: none;
@@ -291,5 +311,88 @@ nav{
     .button{
         width: 210px;
         height: 50px;
+        size: 14px;
     }
+    .main-content{
+        width: 320px;
+        height: 100px;
+    }
+    .main-title{
+        font-size: 30px;
+        padding-top: 30px;
+    }
+    .main-subtitle{
+        font-size: 15px;
+    }
+    .planet{
+        display: none;
+    }
+    .animated{
+        animation: none;
+    }
+    .title{
+        font-size: 30px;
+    }
+    .about-block{
+        flex-direction: column;
+    }
+    .about-card{
+        order: -1;
+        margin-top: 55px;
+    }
+    #about{
+        padding-bottom: 100px;
+    }
+    .skill-card{
+        width: 320px;
+        margin-top: 60px;
+    }
+    .works-pictures{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 40px;
+        padding-bottom: 40px;
+    }
+    .works-pictures img{
+        width: 300px;
+    }
+    .comment{
+        background-image: url('img/comment-mobile.png');
+        height: 75px;
+        margin-top: 13px;
+        margin-bottom: 24px;
+    }
+    .comment p{
+        font-size: 15px;
+    }
+    .comments-block{
+        flex-direction: column;
+    }
+    .footer{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        gap: 40px;
+    }
+    .year{
+        order: 1;
+    }
+    .cloud{
+        animation: none;
+    }
+    .menu_button{
+        display: block;
+    }
+    .mobile_menu{
+        display: flex;
+    }
+}
+
+.hidden{
+    display: none;
+}
+.scroll{
+    overflow: hidden;
 }

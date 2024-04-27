@@ -36,3 +36,24 @@ window.addEventListener('scroll',()=>{
 
     }
 })
+let menuButton = document.querySelector('.menu_button')
+let mobileMenu = document.querySelector('.mobile_menu')
+menuButton.onclick = ()=>{
+    mobileMenu.classList.toggle('hidden')
+    body.classList.toggle('scroll')
+    menuButton.querySelectorAll('img').forEach((img)=>{
+        img.classList.toggle('hidden')
+    })
+}
+let body = document.querySelector('body')
+function changeMobileActive(event){
+    const newActive = event.target
+    const oldActive = mobileMenu.querySelector('.nav-link_active')
+    if (newActive.classList.contains('nav-link')){
+        newActive.classList.add('nav-link_active')
+        oldActive.classList.remove('nav-link_active')
+        mobileMenu.classList.toggle('hidden')
+        body.classList.toggle('scroll')
+    }
+}
+mobileMenu.onclick = changeMobileActive
